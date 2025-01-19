@@ -2,7 +2,7 @@
     <div class="combined-title-pagination">
       <h1>{{ .Title }}</h1>
       {{ if ne .Paginator.PageNumber 1 }}
-          <h3 class="current-page">Page {{.Paginator.PageNumber}}</h3>
+      <h3 class="current-page">{{ T "page_number" .Paginator.PageNumber }}</h3>
       {{ end }}
     </div>
     <hr>
